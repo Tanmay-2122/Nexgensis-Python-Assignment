@@ -104,8 +104,9 @@ def generate_report(data):
     return report
 
 # Read input JSON file
-# Change file name if needed
-with open("base_case.json", "r") as f:
+input_file = input("Enter JSON file name: ")
+
+with open(input_file, "r") as f:
     data = json.load(f)
 
 # Generate report
